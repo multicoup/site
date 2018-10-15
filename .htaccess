@@ -1,0 +1,36 @@
+#   Empêche la visualisation de l'arborescence, n'a rien à voir avec le masquage du « index.php ».
+Options -Indexes
+
+
+#   Active le module de réécriture d'URL.
+
+#RewriteEngine on
+
+#Instruction pour activer l'URL rewriting chez 1and1...
+Options +FollowSymLinks
+RewriteEngine On
+RewriteBase /
+
+
+
+
+
+
+#
+#   Fixe les règles de réécriture d'URL. Ici, nous utilisons une liste blanche.
+#
+
+
+#   Toutes les URL qui ne correspondent pas à ces masques sont réécrites.
+RewriteCond $1 !^(index\.php|img/|dist/)
+
+
+#   Toutes les autres URL vont être redirigées vers le fichier index.php.
+RewriteRule ^(.*)$ index.php/$1 [L]
+
+
+# Password Access for test
+AuthName "multicouples.fr - Site de dev"
+AuthType Basic
+AuthUserFile "/kunden/homepages/4/d429248325/htdocs/dev.multicouples.fr/.htpasswd"
+Require valid-user

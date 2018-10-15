@@ -1,0 +1,21 @@
+{
+  "logger": {
+    "title": "Remote Sync"
+  },
+  "uploadOnSave": true,
+  "useAtomicWrites": false,
+  "deleteLocal": true,
+  "hostname": "home429248325.1and1-data.host",
+  "port": "22",
+  "target": "dev.multicouples.fr",
+  "ignore": [
+    ".remote-sync.json",
+    ".git/**"
+  ],
+  "username": "u70142976",
+  "password": "10dec85",
+  "watch": [
+    "/dist"
+  ],
+  "transport": "scp"
+}

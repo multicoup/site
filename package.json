@@ -1,0 +1,41 @@
+{
+  "name": "multicouples",
+  "version": "1.0.0",
+  "description": "What is CodeIgniter ###################",
+  "main": "gulpfile.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/multicoup/site.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/multicoup/site/issues"
+  },
+  "homepage": "https://github.com/multicoup/site#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015": "^6.22.0",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^7.0.0",
+    "gulp-clean": "^0.3.2",
+    "gulp-csso": "^3.0.0",
+    "gulp-image-optimization": "^0.1.3",
+    "optipng-bin" : "latest",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-notify": "^3.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.1",
+    "gulp-uglify": "^3.0.0",
+    "node-notifier": "^5.1.2",
+    "run-sequence": "^2.2.0"
+  }
+}
